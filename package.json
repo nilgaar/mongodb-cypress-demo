@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "mongodb": "^4.8.1",
-    "mongodb-cypress": "^1.0.2"
+    "mongodb-cypress": "^1.0.5"
   }
 }
