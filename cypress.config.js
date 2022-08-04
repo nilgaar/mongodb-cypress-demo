@@ -6,11 +6,12 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on("task", mongoCypress.mongoSetup(config.env.mongodb));
     },
+    video: false,
   },
   env: {
     mongodb: {
       uri: "mongodb://localhost:27017",
-      db: "test",
+      db: "cypresstestdb",
       options: {},
     },
   },

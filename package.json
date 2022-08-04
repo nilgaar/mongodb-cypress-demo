@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run"
   },
   "author": "Nil Gallego",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "cypress": "^10.4.0"
   },
   "dependencies": {
+    "mongodb": "^4.8.1",
     "mongodb-cypress": "^1.0.2"
   }
 }
