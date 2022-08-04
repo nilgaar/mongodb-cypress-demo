@@ -39,7 +39,9 @@ describe("empty spec", () => {
         assert.equal(res.insertedCount, 2);
       })
       .mongoFindMany(coll, { testkey: { $regex: "testvalue?" } })
-      .then((res) => {})
+      .then((res) => {
+        assert.equal(Object.keys(res).length, 2);
+      })
       .mongoUpdateMany(
         coll,
         { testkey: { $regex: "testvalue?" } },

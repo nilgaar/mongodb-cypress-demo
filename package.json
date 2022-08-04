@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "prestart": "node createdb.js",
+    "start": "npx cypress run"
   },
   "author": "Nil Gallego",
   "license": "ISC",
